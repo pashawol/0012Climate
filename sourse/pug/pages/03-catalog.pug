@@ -1,0 +1,52 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-category/_s-category.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-patner/_s-patner.pug
+include ../blocks/s-sert/_s-sert.pug
+include ../blocks/s-prod/_s-prod.pug
+
+block title
+	title Каталог
+
+block pagecontent
+	+mob-mnu()
+	.main-wrapper.main-wrapper--page
+		+header()
+			+top-line()
+			+top-nav() 
+		.page-head
+			.container
+				+breadcrumb('Каталог','Главная')
+				h1 Каталог
+		+s-category(class="pt-0")
+		+s-prod
+			+e.head
+				.row
+					.col-auto
+						+e.SELECT.select
+							option()  Бренд
+							option()  Бренд 1
+							option()  Бренд 2
+							option()  Бренд 3
+
+					
+					.col-auto
+						+e.SELECT.select
+							option()  Вентиляция
+							option()  Вентиляция 1
+							option()  Вентиляция 2
+							option()  Вентиляция 3
+
+
+		+s-sert
+		//- +s-about-02
+		//- +s-patner
+		+s-form-03()
+		+footer()
+		+s-contact()
+		
+	

@@ -1,0 +1,50 @@
+mixin footer()
+	+b.FOOTER.footer
+		.container
+			.row
+				.col-md.pb-3.align-self-end
+					+e.logo
+						a(href="#")
+							img(src="img/logo-white.png", alt="")
+				.col.pb-3
+					+e.title  Продукция
+					ul.menu 
+						li.menu-item: a(href="#") Коммерческим организациям, 
+						li.menu-item: a(href="#") Частный сектор
+						li.menu-item: a(href="#") Промышленный сектор
+						li.menu-item: a(href="#") Оборудование на складе
+					
+					.d-none.d-sm-block: +e.copy © Climate. 2019. Все права защищены
+				.col.pb-3
+					+e.title Компания
+					ul.menu 
+						li.menu-item: a(href="#") О нас
+						li.menu-item: a(href="#") Объекты
+						li.menu-item: a(href="#") Загрузки
+						li.menu-item: a(href="#") Контакты 
+					.d-none.d-sm-block: +b.soc  
+						+e.item(href="#")
+							+icon('fb')
+						
+						+e.item(href="#")
+							+icon('vk')
+						
+						+e.item(href="#")
+							+icon('instagram')
+						
+						+e.item(href="#")
+							+icon('youtube')
+			.d-sm-none
+				+b.soc.mb-3 
+					+e.item(href="#")
+						+icon('fb')
+					
+					+e.item(href="#")
+						+icon('vk')
+					
+					+e.item(href="#")
+						+icon('instagram')
+					
+					+e.item(href="#")
+						+icon('youtube')
+				+e.copy © Climate. 2019. Все права защищены

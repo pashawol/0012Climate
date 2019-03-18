@@ -1,0 +1,28 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact
+		.container 
+			.row
+				.col-xl-auto.col-sm-6
+					+e.block
+						+e.item
+							+icon('mark')
+							+e.title Адрес
+							p Московская область г. Москва,  ул. Наберженифы, д 23
+						
+						+e.item
+							+icon('envelope')
+							+e.title Телефон
+							p: a.text-body(href="tel:+79556596699") +7 955 659 66 99
+						
+						+e.item
+							+icon('phone')
+							+e.title  E-mail
+							p: a.text-body(href="maito:sample@sample.com") sample@sample.com
+							//- p
+						
+				.col.order-sm-first
+					+e.map-wrap-main
+						+e.map-wrap
+							<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62371ef8cc05c13aab027adda7ed2f3db638d5c11f541f655e1f07d2d73664cd&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+	// end s-contact

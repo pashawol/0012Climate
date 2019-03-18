@@ -1,0 +1,31 @@
+mixin s-docs()
+	// start s-docs
+	+b.s-docs.section.pt-0&attributes(attributes)
+		.container
+			mixin item()
+				+e.col.col-lg-4.col-sm-6
+					+e.item(href="#")
+						+e.DIV.head.row
+							+e.DIV.icon-wrap.col-auto
+								+icon('doc')
+							+e.DIV.text.col
+								+e.DIV.title Название документа в одну строку
+								+e.DIV.size pdf 2.0 mb 
+						+e.DIV.caption Описание документа в одну две строки для понимания содержания
+				//  /+e.col.col-lg-4.col-sm-6
+			+e.group
+				+e.group-title Основные документы 
+				.row
+					- for (var x = 0; x < 3; x++)
+						+item()
+			
+			+e.group
+				+e.group-title Разрешительные документы
+				.row
+					- for (var x = 0; x < 2; x++)
+						+item()
+			
+			+e.group
+				+e.group-title Сертификаты
+				block
+	// end s-docs

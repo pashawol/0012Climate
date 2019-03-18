@@ -1,0 +1,24 @@
+mixin s-patner()
+	// start s-patner
+	+b.s-patner.section#s-patner.lazy-background&attributes(attributes)
+		.container
+			+b.section-title
+				h2.text-primary Партнеры и поставщики
+				
+			+e.slider--js
+				mixin item(i,t, p)
+					+e.slide
+						+e.img-wrap
+							img(src="#" data-lazy=`img/patner-${i}.png`, alt="")
+						+e.title= t
+						+e.text= p
+					// /+e.slide
+				+item('1','CLIVET','Описание роли в пару строк')
+				+item('2','ThermoKey','Описание роли в пару строк')
+				
+				+item('1','CLIVET','Описание роли в пару строк')
+				+item('2','ThermoKey','Описание роли в пару строк')
+				+item('1','CLIVET','Описание роли в пару строк')
+				+item('2','ThermoKey','Описание роли в пару строк')
+
+	// end s-patner

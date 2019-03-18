@@ -1,0 +1,108 @@
+.top-line {
+  @include media-breakpoint-up(lg) {
+
+    padding-top: 39px;
+  }
+  padding-top: 10px;
+	.row{
+    align-items: center;
+    @include roww(8);
+  }
+
+  &__tel{
+    @extend .h2;
+// font-weight: 700;
+    @extend .text-body;
+    line-height: 1;
+    // display:
+
+    .icon{
+      font-size: .9em;
+      color: $primary;
+      margin-right: 5px;
+    }
+  }
+  &__btn{
+    @extend .btn;
+    @extend .btn-outline-blue-mid;
+    @include media-breakpoint-up(lg) {
+
+      width: 168px;
+    }
+  }
+  
+  &__logo{
+    @include media-breakpoint-up(lg) {
+      margin-right: 15px;
+    }
+      a{
+        display: block;
+        img{
+          @extend .res-i;
+        }
+      }
+    }
+// 
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(xs) {}
+
+// 
+@include media-breakpoint-between(md, xl) {}
+
+// 
+@include media-breakpoint-only(xs) {}
+
+@include media-breakpoint-only(sm) {}
+
+@include media-breakpoint-only(md) {}
+
+@include media-breakpoint-only(lg) {}
+
+@include media-breakpoint-only(xl) {}
+
+// 
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(xs) {}
+}
+
+.lang-block{
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  margin-right: -5px;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbbbbb; 
+    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid transparent;
+    @include mt;
+    border-radius: 50%;
+    text-decoration: none !important;
+    margin-right: 5px;
+    margin-left: 5px;
+    &:hover,
+    &--active{
+
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}

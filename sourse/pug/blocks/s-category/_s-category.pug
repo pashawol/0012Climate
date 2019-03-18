@@ -1,0 +1,16 @@
+mixin s-category()
+	// start s-category
+	+b.s-category.section#s-category.lazy-background&attributes(attributes)
+		.container 
+			.row
+				mixin item(i, t)
+					+e.col.col-md
+						+e.item.img-bg(href="#")
+							img.lazy-bg(src="#" data-src=`img/category-img-${i}.jpg` alt="")
+							+e.DIV.title
+								+e.inner= t
+					// /+e.col.col-md
+				+item('1','Комфорт')
+				+item('2','Промышленность')
+				+item('3','ЦОД')
+	// end s-category

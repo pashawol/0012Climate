@@ -1,0 +1,55 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		+e.slider--js
+			
+			+e.slide(style="background-color: #067FBE; ")
+				.container
+					.row
+						.col-auto
+							+e.text-block.text-white 
+								+e.title Экспертные инженерные решения  от&nbsp;мирового  производителя
+								.row
+									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
+									.col-auto
+										+e.btn.btn.btn-body(href="#") Подробнее
+						.col
+							+e.img-wrap--first
+								img.lazy(src="#" data-src="img/slide-img-1.png", alt="")
+			// /+e.slide
+			
+			//- +e.slide(style="background-color: #067FBE; background-image: url(img/head-bg.jpg);")
+			+e.slide(style="background-color: #A2D9F7; ")
+				.container
+					.row
+						.col-auto
+							+e.text-block.text-blue-dark
+								+e.title Экспертные Название выставки на&nbsp;которой компания принимает участие завтра
+								.row
+									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
+									.col-auto
+										+e.btn.btn.btn-blue-dark(href="#") Подробнее
+						.col
+							+e.img-wrap
+								img.lazy(src="#" data-src="img/slide-img-2.png", alt="")
+			// /+e.slide
+			
+			//- +e.slide(style="background-color: #A2D9F7; ")
+			+e.slide(style="background-color: #067FBE; background-image: url(img/slide-bg-3.jpg);")
+				.container
+					.row
+						.col-auto
+							+e.text-block.text-white
+								+e.title Экспертные Какая то&nbsp;продукция на&nbsp;фоне фотографии для наглядности
+								.row
+									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
+									.col-auto
+										+e.btn.btn.btn-body(href="#") Подробнее
+						.col
+							+e.img-wrap
+								img.lazy(src="#" data-src="img/slide-img-3.png", alt="")
+			// /+e.slide
+
+
+			
+	// end header-block

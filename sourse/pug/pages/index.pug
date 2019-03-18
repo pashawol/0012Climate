@@ -1,0 +1,29 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-category/_s-category.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-patner/_s-patner.pug
+include ../blocks/s-sert/_s-sert.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	.main-wrapper
+		+header()
+			+top-line()
+			+top-nav()
+			
+		+header-block()
+		+s-category
+		+s-about
+		+s-patner
+		+s-sert
+		+footer()
+		+s-contact()
+		
+	

@@ -1,0 +1,25 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line
+		.container
+			.row
+				.col-md-auto.col.mb-2
+					+e.logo
+						a(href="#")
+							img(src="img/logo.png", alt="")
+				.col.mb-2.d-none.d-md-block
+					+b.lang-block
+						+e.item(href="#") Ru
+						+e.item--active(href="#") En
+				.col-auto.text-right.mb-2
+					div
+						+e.tel(href="tel:(495)532-0054") 
+							+icon('tel')
+							| (495) 532-0054
+					+e.mail(href="mailto:info@nhvac.ru") info@nhvac.ru
+				.col-auto.mb-2.d-none.d-md-block
+					+e.btn(href="#") Заказать звонок
+				.col-auto.mb-2.d-lg-none
+					+b.toggle-menu-mobile--js.d-lg-none
+						span
+	// end .top-line

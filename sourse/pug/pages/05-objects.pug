@@ -1,0 +1,34 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-category/_s-category.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-patner/_s-patner.pug
+include ../blocks/s-sert/_s-sert.pug
+include ../blocks/s-docs/_s-docs.pug
+
+block title
+	title Объекты
+
+block pagecontent
+	+mob-mnu()
+	.main-wrapper.main-wrapper--page.main-wrapper--without-triangale
+		+header()
+			+top-line()
+			+top-nav() 
+		.page-head
+			.container
+				+breadcrumb('Объекты','Главная')
+				h1 Объекты
+		 
+		+s-docs
+			+s-sert-06
+		//- +s-about-02
+		//- +s-patner
+		//- +s-form-03()
+		+footer()
+		+s-contact()
+		
+	

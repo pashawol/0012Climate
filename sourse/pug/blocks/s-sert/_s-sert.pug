@@ -1,0 +1,42 @@
+mixin s-sert()
+	// start s-sert
+	+b.s-sert.section
+		.container
+			+b.section-title
+				h2 Сертификаты и разрешительная документация на нашу продукцию
+				
+			+e.slider--js.gal
+				mixin item(i)
+					+e.slide
+						+e.item
+							+e.img-wrap.img-bg(href=`img/sert-${i}.jpg`)
+								img(src="#" data-lazy=`img/sert-${i}.jpg`, alt="")
+					// /+e.slide
+				+item(1)
+				+item(2)
+				+item(3)
+				+item(4)
+				
+				+item(3)
+				+item(4)
+
+	// end s-sert
+mixin s-sert-06()
+	// start s-sert
+	+b.s-sert
+		+e.slider--js.gal
+			mixin item(i)
+				+e.slide
+					+e.item
+						+e.img-wrap.img-bg(href=`img/sert-${i}.jpg`)
+							img(src="#" data-lazy=`img/sert-${i}.jpg`, alt="")
+				// /+e.slide
+			+item(1)
+			+item(2)
+			+item(3)
+			+item(4)
+			
+			+item(3)
+			+item(4)
+
+	// end s-sert

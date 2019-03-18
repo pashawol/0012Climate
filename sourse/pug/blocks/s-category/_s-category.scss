@@ -1,0 +1,116 @@
+.s-category {
+	 
+	&__item{
+		// display: block;
+		@include block(370, 237);
+		min-height: 237px;
+		text-decoration: none !important;
+		background-color: $primary;
+	}
+	&__title{
+		display: inline-block;
+		position: absolute;
+		bottom: 25px;
+		background-color: #ffffff;
+		font-weight: bold;
+		// @extend .h3;
+		@include media-breakpoint-only(md) {
+			font-size: 16px;
+			left: 15px;
+		}
+		
+		font-size: 20px;
+		left: 35px;
+		color: #000000;
+		padding: 1px 5px;
+		&::before{
+			content: '';
+			position: absolute;	
+			right: 100%;
+			top: 0;
+			@include media-breakpoint-only(md) {
+
+				@include triangle(4px 26px, #fff, down-right);
+			}
+			@include triangle(4px 32px, #fff, down-right);
+		}
+		
+		&::after{
+			content: '';
+			position: absolute;	
+			left: 100%;
+			top: 0;
+			@include media-breakpoint-only(md) {
+
+				@include triangle(10px 26px, #fff, down-left);
+			}
+			@include triangle(10px 32px, #fff, down-left);
+		}
+		// position: relative;
+	}
+	&__inner{
+		position: relative;
+		&::before{
+			content: url(../img/tr-up.svg);
+			position: absolute;
+			
+		}
+	}
+	&__col:nth-child(1) &__inner{
+		&::before{
+			content: url(../img/tr-down.svg);
+			left: -25px;
+			top: -20px;
+		}
+		
+	}
+	
+	&__col:nth-child(2) &__inner{
+		&::before{
+			left: 5px;
+			top: -25px;
+		}
+
+	}
+	&__col:nth-child(3) &__inner{
+		&::before{
+		right: -25px;
+			top: -25px;
+		}
+
+	}
+
+	&__col{
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+		margin-bottom: 30px;
+	}
+
+
+	//
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

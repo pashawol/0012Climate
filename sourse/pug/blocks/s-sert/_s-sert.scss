@@ -1,0 +1,65 @@
+.s-sert {
+	background-color: #f3fbff;
+	position: relative;
+	z-index: 2;
+	&__img-wrap{
+		@include block(191, 218);
+		border: solid #fff;
+		@include media-breakpoint-up(md) {
+
+			border-left-width: 19px ;
+			border-right-width: 19px ;
+			border-top-width: 22px ;
+			border-bottom-width: 22px ;
+		}
+		border-left-width: 10px ;
+			border-right-width: 10px ;
+			border-top-width: 12px ;
+			border-bottom-width: 12px ;
+		margin: 1px 5px;
+		outline: 1px solid #A2D9F7 !important; 
+	}
+	&__item{
+		
+		max-width: 194px;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+		z-index: 100;
+	}
+	//
+	@include media-breakpoint-up(xl) {
+		padding-top: 45px;
+		padding-bottom: 22px;
+		&__slider{
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+		.section-title{
+		padding-bottom: 5px;
+		}
+	}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

@@ -1,0 +1,22 @@
+
+mixin mob-mnu()
+	
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+b.top-line.col-12
+				+b.lang-block.mb-2
+					+e.item(href="#") Ru
+					+e.item--active(href="#") En
+			+mnu()
+			+b.top-line.col-12 
+				+e.btn(href="#") Заказать звонок
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.d-none.d-lg-block
+		.container
+			+mnu()
+					
+	// end top-nav

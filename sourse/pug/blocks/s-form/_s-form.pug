@@ -1,0 +1,63 @@
+mixin s-form()
+	// start s-form
+	+b.s-form.section#s-form&attributes(attributes)
+		+e.img-wrap.d-none.d-lg-block
+			img.lazy.res-i(src="#" data-src="img/form-img.png", alt="")
+		.container
+			
+			.row
+				.col.align-self-center
+					+e.text-block
+						h2 Хотите стать нашим партнером?
+						p Заполните форму ниже и наши специалисты проконсультируют Вас!
+
+				.col-md-auto
+					+form-wrap()
+						+input('text','Ваше имя')
+						+input('tel','Номер телефона')
+						+e.btn(type='submit') Получить консультацию
+						+polite
+	// end s-form
+mixin s-form-03()
+	// start s-form
+	+b.s-form--catalog.section#s-form&attributes(attributes)
+		+e.img-wrap--catalog.d-none.d-lg-block
+			img.lazy.res-i(src="#" data-src="img/form-img-2.png", alt="")
+		.container
+			
+			.row
+				.col.align-self-center
+					+e.text-block
+						h2 Есть определенные потребности, но нет времени искать  по каталогу?
+						p Заполните форму ниже и наши специалисты проконсультируют Вас и помогут подобрать оптимальный варинат для Вашего объекта
+
+				.col-md-auto
+					+form-wrap()
+						+input('text','Ваше имя')
+						+input('tel','Номер телефона')
+						+e.btn(type='submit') Получить консультацию
+						+polite
+	// end s-form
+mixin s-form-08()
+	// start s-form
+	+b.s-form--contact.section#s-form&attributes(attributes)
+		 
+		.container
+			+b.section-title.text-center
+				h2 Остались вопросы? Задайте их нашему специалисту 
+				+e.text Заполните форму и мы ответим Вам в течении 12 часов
+			+form-wrap()
+				.row
+					.col-lg-4
+						+input('text','Ваше имя')
+					.col-lg-4
+						+input('tel','Номер телефона')
+					.col-lg-4
+						+input('email','Ваш e-mail')
+				+ta('Ваше имя')
+				.row.align-items-center
+					.col-md-auto
+						+e.btn(type='submit') Отправить
+					.col.order-md-first
+						+polite
+	// end s-form

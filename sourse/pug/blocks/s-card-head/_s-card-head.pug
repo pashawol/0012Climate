@@ -1,0 +1,37 @@
+mixin s-card-head()
+	// start s-card-head
+	+b.s-card-head
+		.container
+			.row
+				.col-lg-7
+					+e.sliders
+						mixin sliders(...items)
+							.row
+								.col-sm-9.col-9
+									+e.slider-big.gal
+										each item in items
+											+e.slide-big
+												+e.A.img-wrap(href=`img/${item}.png` )
+													img.res-i(data-lazy=`img/${item}.png`, alt="")
+								.col-sm-3.col-3
+									+e.slider-small
+										each item in items
+											+e.slide-small
+												+e.img-wrap.__img-wrap-small( )
+													img.res-i(data-lazy=`img/${item}.png`, alt="")
+
+
+						+sliders("prod-2","prod-2","prod-1","prod-2","prod-1","prod-2","prod-1","prod-2","prod-1")
+				.col-lg
+					.text-primary.strong ELFODuct MP от 6,0 до 20,2 кВт, рекомендуемый напор до 120 Па
+
+					.text-primary.strong ELFODuct HP от 6,82 до 25,5 кВт, рекомендуемый напор 150 Па
+					p Вентиляторные доводчики канального типа могут быть установлены в горизонтальном или вертикальном положении и представлены в диапазоне производительностей от 6,0 до 25,5 кВт по холоду. Отличительными особенностями этих линеек является:
+					+e.A.btn.btn.btn-blue-mid(href="#") Заказать
+					div.mb-4
+						+e.A.link.tdu(href="#") 
+							+icon('doc')
+							| Скачать каталог продукции 
+						| 
+						+e.SPAN.size.text-secondary.d-inline-block 2.3 mb pdf
+	// end s-card-head

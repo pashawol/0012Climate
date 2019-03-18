@@ -1,0 +1,39 @@
+mixin s-news()
+	// start s-news
+	+b.s-news
+		.container 
+			.row
+				mixin item(i, t)
+					+e.col.col-lg-6
+						+e.item
+							+e.head
+								.row
+									.col
+										+e.DIV.title
+											a.text-blue-dark(href="#")= t
+									.col-auto
+										.small.text-secondary 14.05.2019
+							p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют пот
+							+e.img-wrap.img-bg(href="#")
+								img.lazy-bg(src="#" data-src=`img/news-${i}.jpg` alt="")
+							+e.foot
+								.row
+									.col
+										+e.btn-more(href="#") Подробнее
+									.col-auto
+										+share()  
+					// /+e.col.col-lg-6
+				+item('1','Заголовок новости')
+				+item('2','Заголовок новости в пару строк для наглядности отображения')
+				
+				+item('3','Заголовок новости')
+				+item('4','Заголовок новости в пару строк для наглядности отображения')
+				+item('5','Заголовок новости  ')
+				+item('6','Заголовок новости в пару строк для наглядности отображения')
+			+b.foot-pagin
+				.row
+					.col
+						+e.btn-foot(href="#") Показать еще
+					.col-auto
+						+pugin()
+	// end s-news
