@@ -40,7 +40,30 @@ mixin modal()
 		+input("tel","Ваш телефон")(required)
 		//- +input("email","Ваше email")(required)
 		//- +text( "Комментарий")
-		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Рассчитать") 
+		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Отправить") 
 		+polite()
 	// #modal-call
+	
+	+b.modal-object(id="modal-object" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg" )
+		.row
+			
+			.col-lg-8
+				+e.sliders
+						mixin sliders(...items) 
+							+e.slider-big
+								each item in items
+									+e.slide-big
+										+e.img-wrap.img-bg
+											img.res-i(src="#" data-lazy=`img/${item}.jpg`, alt="")
+							+e.slider-small
+								each item in items
+									+e.slide-small
+										+e.img-wrap.__img-wrap-small.img-bg
+											img.res-i(src="#" data-lazy=`img/${item}.jpg`, alt="")
+						+sliders("object-img","object-img","object-img","object-img","object-img","object-img","object-img","object-img","object-img","object-img") 
+			.col-lg-4
+				+e.title Магазин пормышленного оборудования на ул. Воскресенкской
+				p Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации 
+	// #modal-object
+
 	// modal

@@ -12,13 +12,13 @@ mixin s-card-head()
 										each item in items
 											+e.slide-big
 												+e.A.img-wrap(href=`img/${item}.png` )
-													img.res-i(data-lazy=`img/${item}.png`, alt="")
+													img.res-i(src="#" data-lazy=`img/${item}.png`, alt="")
 								.col-sm-3.col-3
 									+e.slider-small
 										each item in items
 											+e.slide-small
 												+e.img-wrap.__img-wrap-small( )
-													img.res-i(data-lazy=`img/${item}.png`, alt="")
+													img.res-i(src="#" data-lazy=`img/${item}.png`, alt="")
 
 
 						+sliders("prod-2","prod-2","prod-1","prod-2","prod-1","prod-2","prod-1","prod-2","prod-1")

@@ -1,0 +1,42 @@
+mixin s-objects()
+	// start s-objects
+	+b.s-objects
+		.container 
+			.row
+				.col-lg-3
+					+b.aside
+						.s-prod__head.d-lg-none
+							select.s-prod__select
+								option  Склады (6)
+								option  Торговые помещения
+								option  Распределительные узлы
+								option  Частные дома
+								option  Еще категория
+						.d-none.d-lg-block
+							ul.menu 
+								li.menu-item.current-menu-item: a(href="#")  Магазины 
+									| 
+									span 6
+								li.menu-item: a(href="#")  Склады
+								li.menu-item: a(href="#")  Торговые помещения
+								li.menu-item: a(href="#")  Распределительные узлы
+								li.menu-item: a(href="#")  Частные дома
+								li.menu-item: a(href="#")  Еще категория
+				.col
+					.row
+						mixin item(i, t)
+							+e.col.col-lg-4.col-sm-6
+								+e.item.popup-with-move-anim(href="#modal-object")
+									+e.img-wrap.img-bg
+										img.lazy-bg(src="#" data-src=`img/object-${i}.jpg` alt="")
+										+e.DIV.counter 10 фото
+									+e.DIV.title= t
+							// /+e.col.col-lg-4.col-sm-6
+						+item('1','Магазин на ул. Воскресенкской')
+						+item('2','Магазин пормышленного оборудования  на ул. Воскресенкской')
+						+item('3','е')
+						+item('4','Магазин на ул. Воскресенкской')
+						+item('5','Магазин пормышленного оборудования  на ул. Воскресенкской')
+						+item('6','Магазин пормышленного оборудования  на ул. Воскресенкской')
+
+	// end s-objects

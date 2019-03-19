@@ -1,15 +1,26 @@
 .modal-win {
 	display: block;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+background-color: #ffffff;
+max-width: 370px;
+@include media-breakpoint-up(sm) {
+
+	padding: 30px;
+}
+padding: 40px 15px 20px;
+&--lg{
+	@extend .container;
+	@include media-breakpoint-down(xs) {
+		max-width: 100%;
+	}
+}
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
 	}
-	.mfp-close {
-		color: $primary;
-		font-size: 40px;
-		font-weight: 100;
-	}   
+ 
 }
 
 a {
@@ -25,48 +36,7 @@ a {
 		font-size: em(36);
 	}
 }
-
-.mfp-close {
-	user-select: none; // width: 44px;
-	// height: 44px;
-	// line-height: 44px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	text-decoration: none;
-	text-align: center;
-	opacity: .65; // padding: 0 0 18px 10px;
-	// color: #fff;
-	font-style: normal;
-	font-size: 28px;
-	font-family: Arial, Baskerville, monospace;
-	overflow: visible;
-	cursor: pointer;
-	background: 0 0;
-	border: 0;
-	display: block;
-	outline: 0;
-	padding: 0;
-	z-index: 1046;
-	box-shadow: none;
-	color: $body-color;
-	opacity: 1;
-	font-size: 50px;
-	font-weight: 100;
-	width: 56px;
-	height: 56px; // box-shadow: 0 10px $h2-font-size rgba(0, 0, 0, 0.15);
-	// background-color: #fff;
-	border-radius: 50%;
-	line-height: 56px;
-	text-align: center;
-	margin-top: -5px;
-	margin-right: -5px;
-	@include mt;
-	&:hover {
-		// background-color: #e3f3f6;
-	}
-}
-
+ 
 @include media-breakpoint-up(sm) { 
 	.modal-text {
 		max-width: 1000px;
@@ -120,3 +90,47 @@ a {
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+
+.mfp-bg{
+
+	background: rgba(255, 255, 255, 0.92) !important;
+	opacity: 1 !important;
+}
+
+
+.modal-object{
+	&__sliders{
+
+		max-width: 713px;
+	}
+	&__img-wrap{
+		@include block(713,521);
+	}
+	&__slider-big{
+		@include media-breakpoint-up(sm) {
+
+			margin-bottom: 23px;
+		}
+		margin-bottom: 10px;
+	}
+	&__slider-small{
+		@include media-breakpoint-up(sm) {
+
+			padding-left: 34px;
+			padding-right: 34px;
+			margin-bottom: 30px;
+		}
+		margin-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+				&__slide-small{
+					padding-left: 6px;
+					padding: 6px;
+				}
+
+				&__title{
+					font-weight: bold;
+					margin-bottom: 1em;
+				}
+}

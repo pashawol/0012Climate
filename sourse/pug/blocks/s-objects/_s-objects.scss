@@ -1,0 +1,91 @@
+.s-objects {
+	padding-top: 20px;
+	//
+
+	&__img-wrap{
+		display: block;
+		@include block(271,198);
+		background-color: $primary;
+		@include media-breakpoint-up(lg) {
+
+			margin-bottom: 30px;
+		}
+		margin-bottom: 15px;
+	}
+	&__counter{
+		font-weight: bold;
+		color: #ffffff;
+		text-decoration: none;
+		position: absolute;
+		right: 15px;
+		bottom: 15px;
+		background: $blue-mid;
+		border-radius: 3px;
+		padding: 2px 5px;
+	}
+	&__title{
+		text-align: center;
+		font-size: 13px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 240px;
+	}
+	&__item{
+		margin-bottom: 40px;
+		display: block;
+		@extend .text-body;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}
+
+.aside{
+	.menu{
+		&-item{
+			list-style-type: none;
+			@include media-breakpoint-up(lg) {
+
+				margin-bottom: 1.1em;
+				font-size: 1rem;
+			}
+			font-size: .9rem;
+			margin-bottom: 0.8em;
+			a{
+
+				text-decoration: none !important;
+			}
+			span{
+				font-weight: bold;
+				color: $body-color;
+				margin-left: 8px;
+			}
+			&.current-menu-item{
+				a{
+					color: $body-color;
+				}
+			}
+		}
+	}
+}

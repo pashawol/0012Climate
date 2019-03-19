@@ -3,7 +3,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 	background-position: center top;
 	background-repeat: no-repeat; 
-	// background-image: url(../screen/4.jpg);
+	// background-image: url(../screen/5.jpg);
 }
 
 body {
@@ -461,11 +461,16 @@ input::-webkit-inner-spin-button {
 
 
 .page-head{
+	@include media-breakpoint-up(lg) {
 		padding-top: 10px;
+	}
 		h1{
 			font-weight: bold;
 			color: $blue-dark;
-			margin-bottom: em(16);
+			@include media-breakpoint-up(lg) {
+
+				margin-bottom: em(16);
+			}
 		}
 }
 a.back{
