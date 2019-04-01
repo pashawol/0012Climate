@@ -552,4 +552,20 @@ jQuery(document).ready(function ($) {
 			
 		}) 
 
+			$(".section").each(function () {
+	var wowAnim = $(this).find(".s-category__col,\
+														.s-about__col,\
+														.s-patner__slide,\
+														.s-sert__slide,\
+														.s-condition__col");
+	wowAnim.each(function(i){
+
+	wowAnim.eq(i).attr("data-wow-delay", i*.1*2 + "s");
+
+	   var wow = new WOW({ mobile: false });
+	        wow.init();
+
+	});
+	});
+
 });

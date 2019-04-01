@@ -4,7 +4,7 @@ mixin s-category()
 		.container 
 			.row
 				mixin item(i, t)
-					+e.col.col-md
+					+e.col.col-md(class="wow fadeInLeft" data-wow-duration="0.8s")
 						+e.item.img-bg(href="#")
 							img.lazy-bg(src="#" data-src=`img/category-img-${i}.jpg` alt="")
 							+e.DIV.title

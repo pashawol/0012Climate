@@ -8,12 +8,12 @@ mixin header-block()
 					.row
 						.col-auto
 							+e.text-block.text-white 
-								+e.title Экспертные инженерные решения  от&nbsp;мирового  производителя
-								.row
+								+e.title(class="wow fadeInDown" data-wow-duration="0.8s") Экспертные инженерные решения  от&nbsp;мирового  производителя
+								.row(class="wow fadeInUp" data-wow-duration="0.8s")
 									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
 									.col-auto
 										+e.btn.btn.btn-body(href="#") Подробнее
-						.col
+						.col(class="wow fadeInRight" data-wow-duration="0.8s")
 							+e.img-wrap--first
 								img.lazy(src="#" data-src="img/slide-img-1.png", alt="")
 			// /+e.slide
@@ -22,14 +22,14 @@ mixin header-block()
 			+e.slide(style="background-color: #A2D9F7; ")
 				.container
 					.row
-						.col-auto
+						.col-auto 
 							+e.text-block.text-blue-dark
-								+e.title Экспертные Название выставки на&nbsp;которой компания принимает участие завтра
-								.row
+								+e.title(class="wow fadeInDown" data-wow-duration="0.8s") Экспертные Название выставки на&nbsp;которой компания принимает участие завтра
+								.row(class="wow fadeInUp" data-wow-duration="0.8s")
 									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
 									.col-auto
 										+e.btn.btn.btn-blue-dark(href="#") Подробнее
-						.col
+						.col(class="wow fadeInLeft" data-wow-duration="0.8s")
 							+e.img-wrap
 								img.lazy(src="#" data-src="img/slide-img-2.png", alt="")
 			// /+e.slide
@@ -40,8 +40,8 @@ mixin header-block()
 					.row
 						.col-auto
 							+e.text-block.text-white
-								+e.title Экспертные Какая то&nbsp;продукция на&nbsp;фоне фотографии для наглядности
-								.row
+								+e.title(class="wow fadeInDown" data-wow-duration="0.8s") Экспертные Какая то&nbsp;продукция на&nbsp;фоне фотографии для наглядности
+								.row(class="wow fadeInUp" data-wow-duration="0.8s")
 									.col Приписка к&nbsp;слайдеру в&nbsp;несколько строк для раскрытия информации
 									.col-auto
 										+e.btn.btn.btn-body(href="#") Подробнее

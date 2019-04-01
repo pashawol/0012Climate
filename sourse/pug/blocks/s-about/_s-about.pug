@@ -3,11 +3,11 @@ mixin s-about()
 	+b.s-about.section#s-about.lazy-background.pt-0&attributes(attributes)
 		.container
 			+b.section-title
-				h2.text-primary CLIMATE - заголовок для текста о компании
-				+e.text За годы своей работы Компания Климат успела зарекомендовать себя как надежного партнера на объектах любой сложности. Мы команда профессионалов, работающих для вас в Москве, Санкт-Петербурге, Воронеже, Липецке, Новосибирске, Красноярске и других регионах  России и стран СНГ. 
+				h2.text-primary(class="wow fadeInDown" data-wow-duration="0.8s") CLIMATE - заголовок для текста о компании
+				+e.text(class="wow fadeInUp" data-wow-duration="0.8s") За годы своей работы Компания Климат успела зарекомендовать себя как надежного партнера на объектах любой сложности. Мы команда профессионалов, работающих для вас в Москве, Санкт-Петербурге, Воронеже, Липецке, Новосибирске, Красноярске и других регионах  России и стран СНГ. 
 			+e.head: .row
 				mixin item(i, t, p)
-					+e.col.col-lg-3.col-sm-6
+					+e.col.col-lg-3.col-sm-6(class="wow fadeInUp" data-wow-duration="0.8s")
 						+e.item
 							+e.img-wrap
 								img.lazy(src="#" data-src=`img/about-i-${i}.svg`  alt="")
@@ -20,9 +20,9 @@ mixin s-about()
 				+item('4','Лучшее предложение','Для наших постоянных партнеров действуют гибкие условия скидок')
 			.row
 				.col
-					+b.video-wrap
+					+b.video-wrap(class="wow fadeInLeft" data-wow-duration="0.8s")
 						iframe(width='560', height='315', src='https://www.youtube.com/embed/fd53wj7dagA',  allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='') 
-				.col-lg-auto
+				.col-lg-auto(class="wow fadeInRight" data-wow-duration="0.8s")
 					+e.right-block
 						mixin item(i,p)
 							+e.item-body

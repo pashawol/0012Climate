@@ -10,7 +10,13 @@ $output-bourbon-deprecation-warnings: false;
 // @import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-solid";
 // @import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-light";
 // @import "../libs/magnificPopup/magnific-popup.sass";
-// @import "../libs/swiper/swiper.min.css";
+@import "../libs/animate.scss";
+@include media-breakpoint-up(xl){
+
+  .wow {
+    visibility: hidden;
+  }
+}
 // @import "../libs/select2-4.0.6-rc.1/dist/css/select2.min";
 // @import "../libs/dropzone";
 // @import "../libs/gijgo-master/dist/combined/css/gijgo";

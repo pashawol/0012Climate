@@ -6,14 +6,18 @@
 		}
 
 		&__select{
-			border: none !important;
+			// border: none !important;
+			border-color: #43ace1;
+			border-radius: 5px;
 			outline: none !important; 
 			background-image: url("data:image/svg+xml,%3Csvg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L4.5 4L8 0.5' stroke='black'/%3E%3C/svg%3E%0A");
 			background-repeat: no-repeat;
-			background-position: 100% 50%; // background-size: rem(18) ;
+			background-position: calc(100% - 10px) 50%; // background-size: rem(18) ;
 			padding-right: rem(23px);
 			appearance: none !important;
+			padding: rem(5) rem(5);
 			color: $blue-mid;
+			font-weight: bold;
 			 
 			&:focus::-ms-value {
 				// Suppress the nested default white text on blue background highlight given to

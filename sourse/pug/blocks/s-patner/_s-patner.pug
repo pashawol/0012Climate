@@ -2,12 +2,12 @@ mixin s-patner()
 	// start s-patner
 	+b.s-patner.section#s-patner.lazy-background&attributes(attributes)
 		.container
-			+b.section-title
+			+b.section-title(class="wow fadeInDown" data-wow-duration="0.8s")
 				h2.text-primary Партнеры и поставщики
 				
 			+e.slider--js
 				mixin item(i,t, p)
-					+e.slide
+					+e.slide(class="wow fadeInLeft" data-wow-duration="0.8s")
 						+e.img-wrap
 							img(src="#" data-lazy=`img/patner-${i}.png`, alt="")
 						+e.title= t
