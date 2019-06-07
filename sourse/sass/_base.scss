@@ -94,7 +94,11 @@ body {
 
 body,
 html {
-	font-size: $em-base;
+	@include media-breakpoint-up(xxl) {
+
+		font-size: $em-base;
+	}
+	font-size: 14px;
 }
 
 body {

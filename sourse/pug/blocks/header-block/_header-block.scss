@@ -13,7 +13,7 @@
 	}
 	&__text-block{
 		padding-bottom: 40px;
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xxl) {
 			
 			max-width: 500px;
 			margin-left: 70px;
@@ -23,12 +23,12 @@
 		z-index: 2;
 		@include media-breakpoint-up(md) {
 
-			height: 508px;
+			height: rem(508px);
 		}
 		// height: 320px;
 	}
 	&__btn{
-		width: 168px;
+		width: rem(168px);
 	}
 	&__img-wrap{
 		position: absolute;
