@@ -11,8 +11,8 @@
 		text-align: center;
 	}
 	&__img-wrap{
-		height: 90px;
-		margin-bottom: 10px;
+		height: rem(90px);
+		margin-bottom: rem(10px);
 		img{
 			@extend .res-i;
 		}
@@ -23,11 +23,11 @@
 		margin-bottom: 1em;
 	}
 	&__text{
-		font-size: 13px;
+		font-size: rem(13px);
 	}
 	@include media-breakpoint-up(xl) {
-		padding-top: 30px;
-		padding-bottom: 70px;
+		padding-top: rem(30px);
+		padding-bottom: rem(70px);
 	}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

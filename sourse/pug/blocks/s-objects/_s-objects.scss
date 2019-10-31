@@ -1,5 +1,5 @@
 .s-objects {
-	padding-top: 20px;
+	padding-top: rem(20px);
 	//
 
 	&__img-wrap{
@@ -8,30 +8,30 @@
 		background-color: $primary;
 		@include media-breakpoint-up(lg) {
 
-			margin-bottom: 30px;
+			margin-bottom: rem(30px);
 		}
-		margin-bottom: 15px;
+		margin-bottom: rem(15px);
 	}
 	&__counter{
 		font-weight: bold;
 		color: #ffffff;
 		text-decoration: none;
 		position: absolute;
-		right: 15px;
-		bottom: 15px;
+		right: rem(15px);
+		bottom: rem(15px);
 		background: $blue-mid;
-		border-radius: 3px;
-		padding: 2px 5px;
+		border-radius: rem(3px);
+		padding: rem(2px) rem(5px);
 	}
 	&__title{
 		text-align: center;
-		font-size: 13px;
+		font-size: rem(13px);
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 240px;
 	}
 	&__item{
-		margin-bottom: 40px;
+		margin-bottom: rem(40px);
 		display: block;
 		@extend .text-body;
 	}

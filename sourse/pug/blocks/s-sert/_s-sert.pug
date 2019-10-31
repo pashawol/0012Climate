@@ -9,16 +9,12 @@ mixin s-sert()
 				mixin item(i)
 					+e.slide(class="wow fadeInUp" data-wow-duration="0.8s")
 						+e.item
-							+e.img-wrap.img-bg(href=`img/sert-${i}.jpg`)
-								img(src="#" data-lazy=`img/sert-${i}.jpg`, alt="")
+							+e.img-wrap(href=`img/sert-${i}.jpg`)
+								img(src=`img/sert-${i}.jpg`, alt="")
 					// /+e.slide
 				+item(1)
 				+item(2)
-				+item(3)
-				+item(4)
-				
-				+item(3)
-				+item(4)
+				+item(3) 
 
 	// end s-sert
 mixin s-sert-06()
@@ -28,8 +24,8 @@ mixin s-sert-06()
 			mixin item(i)
 				+e.slide
 					+e.item
-						+e.img-wrap.img-bg(href=`img/sert-${i}.jpg`)
-							img(src="#" data-lazy=`img/sert-${i}.jpg`, alt="")
+						+e.img-wrap(href=`img/sert-${i}.jpg`)
+							img(src=`img/sert-${i}.jpg`, alt="")
 				// /+e.slide
 			+item(1)
 			+item(2)

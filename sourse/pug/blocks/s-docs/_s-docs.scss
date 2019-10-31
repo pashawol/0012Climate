@@ -8,23 +8,23 @@
 			color: $blue-dark;
 			@extend .h3;
 			font-weight: bold;
-			padding-bottom: 10px;
+			padding-bottom: rem(10px);
 			margin-bottom: em(21);
 		}
 		&__item{
 			display: block;
 			text-decoration: none !important;
-			margin-bottom: 45px;
+			margin-bottom: rem(45px);
 			.icon{
 				color: $blue-mid;
-				font-size: 37px;
+				font-size: rem(37px);
 			}
 		}
 		&__title{
 			font-weight: bold;
 		}
 		&__size{
-			font-size: 13px;
+			font-size: rem(13px);
 			color: #bdbdbd;
 		}
 		&__head{
@@ -32,14 +32,14 @@
 			@include roww(11);
 		}
 		&__caption{
-			max-width: 280px;
-			font-size: 13px;
+			max-width: rem(280px);
+			font-size: rem(13px);
 			line-height:( 20 / 13);
 		}
 
 		.s-sert{
 			background-color: transparent;
-			padding-top: 18px;
+			padding-top: rem(18px);
 			padding-bottom: 0;
 		}
 	//

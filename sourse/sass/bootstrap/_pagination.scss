@@ -1,9 +1,12 @@
+.page-numbers,
 .pagination {
   display: flex;
   @include list-unstyled();
   @include border-radius();
 }
 
+.page-numbers a,
+.page-numbers span,
 .page-link {
   position: relative;
   display: block;
@@ -14,6 +17,7 @@
   background-color: $pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
   border-radius: 5px;
+  font-weight: bold;
   @include mt;
 
   &:hover {
@@ -30,14 +34,19 @@
     box-shadow: $pagination-focus-box-shadow;
   }
 }
-
+.page-numbers  .current {
+  z-index: 1;
+  color: $pagination-active-color;
+  background-color: $pagination-active-bg;
+  border-color: $pagination-active-border-color;
+}
 .page-item {
   border-radius: 5px;
   width: 46px;
   font-weight: bold;
   text-align: center;
    
-
+    a.current,
   &.active .page-link {
     z-index: 1;
     color: $pagination-active-color;

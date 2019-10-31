@@ -1,5 +1,8 @@
 .container{}
 .top-line {
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 10px;
+  }
   @include media-breakpoint-up(lg) {
 
     padding-top: 39px;

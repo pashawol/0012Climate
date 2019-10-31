@@ -10,7 +10,7 @@
 		height: 100%;
 		@include media-breakpoint-up(xl) {
 			
-			width: calc(50vw + 100% - 590px);
+			width: calc(50vw + 100% - #{rem(590px)});
 		}
 		@include media-breakpoint-up(sm) {
 
@@ -33,35 +33,35 @@
 	&__block{
 		@include media-breakpoint-up(xl) {
 
-			width: 385px;
+			width: rem(385px);
 		}
 		// height: 357px;
-		padding-top: 45px;
+		padding-top: rem(45px);
 	}
 	&__item{
-		max-width: 305px;
+		max-width: rem(305px);
 		position: relative;
 		@include media-breakpoint-up(sm) {
 
 			margin-left: auto;
-			margin-bottom: 55px;
+			margin-bottom: rem(55px)
 		}
-		margin-bottom: 25px;
-			padding-left: 35px;
+		margin-bottom: rem(25px);
+			padding-left: rem(35px);
 
 		.icon{
 			color: $blue-l;
-			font-size: 19px;
+			font-size: rem(19px);
 			position: absolute;
 			left: 0;
 		}
 	}
 	&__title{
 		color: $blue-l;
-		margin-bottom: 5px;
+		margin-bottom: rem(5px);
 	}
 	p{
-		font-size: 13px;
+		font-size: rem(13px);
 	}
 	//
 	@include media-breakpoint-up(xl) {}

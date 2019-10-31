@@ -3,26 +3,26 @@
 	&__item{
 		// display: block;
 		@include block(370, 237);
-		min-height: 237px;
+		min-height: rem(237px);
 		text-decoration: none !important;
 		background-color: $primary;
 	}
 	&__title{
 		display: inline-block;
 		position: absolute;
-		bottom: 25px;
+		bottom: rem(25px);
 		background-color: #ffffff;
 		font-weight: bold;
 		// @extend .h3;
 		@include media-breakpoint-only(md) {
-			font-size: 16px;
-			left: 15px;
+			font-size: rem(16px);
+			left: rem(15px);
 		}
 		
-		font-size: 20px;
-		left: 35px;
+		font-size: rem(20px);
+		left: rem(35px);
 		color: #000000;
-		padding: 1px 5px;
+		padding: rem(1px) rem(5px);
 		&::before{
 			content: '';
 			position: absolute;	
@@ -30,9 +30,9 @@
 			top: 0;
 			@include media-breakpoint-only(md) {
 
-				@include triangle(4px 26px, #fff, down-right);
+				@include triangle(#{rem(4px)} #{rem(25px)}, #fff, down-right);
 			}
-			@include triangle(4px 32px, #fff, down-right);
+			@include triangle(#{rem(4px)} #{rem(31px)}, #fff, down-right);
 		}
 		
 		&::after{
@@ -42,9 +42,9 @@
 			top: 0;
 			@include media-breakpoint-only(md) {
 
-				@include triangle(10px 26px, #fff, down-left);
+				@include triangle(#{rem(10px)} #{rem(25px)}, #fff, down-left);
 			}
-			@include triangle(10px 32px, #fff, down-left);
+			@include triangle(#{rem(10px)} #{rem(31px)}, #fff, down-left);
 		}
 		// position: relative;
 	}
@@ -59,32 +59,32 @@
 	&__col:nth-child(1) &__inner{
 		&::before{
 			content: url(../img/tr-down.svg);
-			left: -25px;
-			top: -20px;
+			left: rem(-25px);
+			top: rem(-20px);
 		}
 		
 	}
 	
 	&__col:nth-child(2) &__inner{
 		&::before{
-			left: 5px;
-			top: -25px;
+			left: rem(5px);
+			top: rem(-25px);
 		}
 
 	}
 	&__col:nth-child(3) &__inner{
 		&::before{
-		right: -25px;
-			top: -25px;
+		right: rem(-25px);
+			top: rem(-25px);
 		}
 
 	}
 
 	&__col{
 		@include media-breakpoint-up(md) {
-			margin-bottom: 20px;
+			margin-bottom: rem(20px);
 		}
-		margin-bottom: 30px;
+		margin-bottom: rem(30px);
 	}
 
 

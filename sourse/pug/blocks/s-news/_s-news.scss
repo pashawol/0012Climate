@@ -2,20 +2,20 @@
 	padding-top: 10px;
 		&__img-wrap{
 			@include block(570, 175);
-			margin-bottom: 30px;
+			margin-bottom: rem(30px);
 			background-color: $blue-l;
 		}
 		&__item{
 			border-top: 1px solid $blue-l;
-			padding-top: 15px;
+			padding-top: rem(15px);
 			height: 100%;
 			display: flex;
 			flex-direction: column;
-			padding-bottom: 57px;
+			padding-bottom: rem(57px);
 			p{
 				margin-top: auto;
-				font-size: 13px;
-				max-width: 500px;
+				font-size: rem(13px);
+				max-width: rem(500px);
 				margin-bottom: em(40);
 			}
 		}
@@ -23,25 +23,25 @@
 			// @extend .h3;
 			color: $blue-dark;
 			font-weight: bold;
-			max-width: 500px;
+			max-width: rem(500px);
 		}
 		&__head{
-			padding-bottom: 20px;
+			padding-bottom: rem(20px);
 		}
 		&__btn-more{
-			margin-bottom: 10px;
-					font-size: 13px;
+			margin-bottom: rem(10px);
+					font-size: rem(13px);
 					font-weight: bold;
 					@extend .btn;
 					@extend .btn-blue-dark;
-					padding: 0 5px;
+					padding: 0 rem(5px);
 		}
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {
-		padding-bottom: 47px;
+		padding-bottom: rem(47px);
 	}
-	padding-bottom: 30px;
+	padding-bottom: rem(30px);
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
